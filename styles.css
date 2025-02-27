@@ -1,25 +1,194 @@
-h1, h2, h3, h4 {
-    font-family: 'Courier New', Courier, monospace;
-    color: red;
-    
-}
-
-
-body{
-    color: darkred;
+/* RESET / GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif; /* fallback font */
+    color: #333;
+    background-color: #fff;
+  }
+  
+  /* PRIMARY BLUE COLOR */
+  :root {
+    --primary-blue: #0061C8;
+    --second-blue: #00AEFF;
+  }
+  
+  /* HEADER / NAV */
+  header {
+    background: linear-gradient(to bottom, #e6f7ff, #ffffff);
+    font-family: 'Raleway', sans-serif;
+  }
+  .navbar {
+    width: 100%;
+    padding: 1.2rem 2.5rem; /* Thicker header and extra right padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.8rem; /* Increased font size for the logo */
+    font-weight: bold;
+    color: var(--second-blue);
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 3rem; /* Increased spacing between header buttons */
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: var(--second-blue);
+    font-weight: bold;
+    font-size: 1.2rem; /* Increased font size for nav links */
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
     text-align: center;
-    font-weight:bolder;
-}
-
-.box {
-    height: 150px;
-    width: 200px;
-    padding: 10px;
-    margin: 10px;
-    border: 10px solid black;
-    background-color: red;
-    border-radius: 15px; 
-
-    margin: 0 auto; /* Centers horizontally */
-    text-align: center; /* Centers text inside the box */
-}
+  }
+  .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, white 5%, rgba(255,255,255,0) 100%);
+    z-index: 1;
+  }
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300; /* Thinner weight */
+  }
+  .hero-title {
+    font-size: 90px;
+  }
+  .hero-subtitle {
+    font-size: 70px;
+  }
+  .blue-text {
+    color: var(--primary-blue);
+  }
+  
+  /* DIVIDER */
+  .divider {
+    width: 100%;
+    height: 16px;  /* Thicker divider */
+    background-color: #ddd;
+  }
+  
+  /* MAIN CONTENT */
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* AIRPORTS SECTION */
+  .airports {
+    width: 100%;
+  }
+  .airport {
+    background: linear-gradient(to bottom, #ffffff, #e6f7ff);
+    padding: 2rem 0;
+  }
+  .airport-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .airport-content .airport-image,
+  .airport-content .airport-text {
+    width: 48%;
+  }
+  .airport-content.reverse {
+    flex-direction: row-reverse;
+  }
+  .airport-text {
+    font-family: 'Inria Serif', serif;
+    text-align: center;
+  }
+  .airport-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .airport-text p {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  /* Airport links list */
+  .airport-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .airport-links li {
+    margin-bottom: 0.5rem;
+  }
+  .airport-links li a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-family: 'Inria Serif', serif;
+  }
+  .airport-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Airport images with increased rounded corners */
+  .airport-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #ddd;
+    text-align: left;
+    padding: 1rem 2rem; /* extra left/right padding */
+    font-family: 'Inria Serif', serif;
+  }
+  
+  .footer-info {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-info li {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Add spacing between list items without a separator */
+  .footer-info li + li {
+    margin-left: 2rem;
+  }
+  
+  
+  
+  

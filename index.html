@@ -1,55 +1,104 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>A page about Dylan Bassett</title>
-        <link rel="stylesheet" href ="styles.css">
-    </head>
-    <body>
-        <h1>A page about Dylan Bassett</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chicago Flying Tips</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Chicago Flying Tips</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Airports</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <img src="images/hero-midway.jpg" alt="Aerial view of Chicago Midway area" class="hero-img">
+    <div class="hero-text">
+      <h1><span class="hero-title">Chicago Flying Tips</span></h1>
+      <h2 class="hero-subtitle">For <span class="blue-text">Private Pilots</span></h2>
+    </div>
+  </section>
+  
 
-        <img src="imageOfMe.webp" width="300" height="400">
+  <div class="divider"></div>
 
-        <h2>A bit about me</h2>
 
-            <p>I'm a sophomore and Games and Interactive Media student here at MSU! I was previously doing Computer Science before switching here. I'm excited to continue learning about game development and the various tools involved.</p>
-
-        <h2>Horror Media</h2>
-
-            <h3>Games and Movies</h3>
-
-            <p>I'm a big horror media fan, from stories, movies, shows, and games. I was first introduced to horror when I was extremely young, maybe too young. My dad and I would watch old movies, like the original Wolf Man, and play old horror games.</p>
-
-            <h3>Keys to Good Horror</h3>
-
-                <h4>Atmosphere</h4>
-
-                <h4>Themes & Purpose</h4>
-
-                <h4>Characters</h4>
-
-            <h3>Top 5</h3>
-
+  <main>
+    <section class="airports">
+      <div class="airport">
+        <div class="airport-content">
+          <div class="airport-image">
+            <img src="images/midway.jpg" alt="Midway Airport">
+          </div>
+          <div class="airport-text">
+            <h2>MIDWAY</h2>
             <p>
-                This list changes all the time, but the top three are pretty concrete.
+              Midway International Airport (KMDW) is the sister airport of Chicago O'Hare International Airport and serves as Southwest Airlines' Chicago hub. The airport is home to several Fixed Base Operators (FBOs) for general aviation, including Atlantic and Signature. There are a couple of flight schools for those interested in training at a busy airport. This is where I did my training!
             </p>
-                <div class="box">
-                
-                    <ol>
-                        <li> <a href="https://store.steampowered.com/app/57300/Amnesia_The_Dark_Descent/">Amnesia: The Dark Descent (game)</a> </li>
-                        <li> <a href="https://en.wikipedia.org/wiki/Hereditary_(film)">Hereditary (movie)</a> </li>
-                        <li> <a href="https://store.steampowered.com/app/282140/SOMA/">SOMA (game)</a> </li>
-                        <li> <a href="https://en.wikipedia.org/wiki/The_Thing_(1982_film)">The Thing (movie)</a> </li>
-                        <li> <a href="https://en.wikipedia.org/wiki/Smile_2">Smile 2 (movie)</a> </li>
-                    </ol>
-                
-                </div>
+            <ul class="airport-links">
+              <li><a href="https://www.flychicago.com/midway/home/pages/default.aspx">Visit Midway's Website</a></li>
+              <li><a href="https://skyvector.com/airport/MDW/Chicago-Midway-International-Airport">Midway Aeronautical Information</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="divider"></div>
 
+      <div class="airport">
+        <div class="airport-content reverse">
+          <div class="airport-image">
+            <img src="images/gary.jpg" alt="Gary Airport">
+          </div>
+          <div class="airport-text">
+            <h2>GARY</h2>
+            <p>
+              Gary/Chicago International Airport (KGYY) is an airport near the border of Indiana and Illinois. You will usually see private jet traffic here, but can occasionally find military airplanes. During the Chicago Air and Water Show, the fighter jets and stunt planes land and take off here. There are a few FBOs here, including Gary Jet Center. I flew out of KGYY on many solo cross-country flights!
+            </p>
+            <ul class="airport-links">
+              <li><a href="https://www.flygyy.com/">Visit Gary/Chicago's Website</a></li>
+              <li><a href="https://skyvector.com/airport/GYY/Gary-Chicago-International-Airport">Gary/Chicago Aeronautical Information</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <div class="airport">
+        <div class="airport-content">
+          <div class="airport-image">
+            <img src="images/lansing.jpg" alt="Lansing Airport">
+          </div>
+          <div class="airport-text">
+            <h2>LANSING</h2>
+            <p>
+              Lansing Municipal Airport (KIGQ) is a non-towered airport near the border of Indiana and Illinois. The airport is home to a few small FBOs and a helicopter flight school. You will tend to find student pilot traffic here, and it may get fairly busy on a nice day. There are four runways; north, south, east, and west, ensuring more manangable crosswinds for landing. This is where I did my first solo flight!
+            </p>
+            <ul class="airport-links">
+              <li><a href="https://lansingmunicipalairport.org/">Visit Lansing Municipal's Website</a></li>
+              <li><a href="https://skyvector.com/airport/IGQ/Lansing-Municipal-Airport">Lansing Municipal Aeronautical Information</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            
-
-
-
-    </body>
-
-    
+  <footer>
+    <ul class="footer-info">
+      <li>basset58@msu.edu</li>
+      <li>(111) 111 1111</li>
+    </ul>
+  </footer>
+  
+</body>
 </html>
