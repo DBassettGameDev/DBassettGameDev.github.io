@@ -8,12 +8,10 @@
     color: #333;
     background-color: #fff;
   }
-  
   :root {
     --primary-blue: #0061C8;
     --second-blue: #00AEFF;
   }
-  
   header {
     background: linear-gradient(to bottom, #e6f7ff, #ffffff);
     font-family: 'Raleway', sans-serif;
@@ -41,12 +39,10 @@
     font-weight: bold;
     font-size: 1.2rem;
   }
-  
   .hero {
     position: relative;
     height: 50vh;
-    overflow: hidden;
-    text-align: center;
+    background: url('images/hero-midway.jpg') center center/cover no-repeat fixed;
   }
   .hero-img {
     position: absolute;
@@ -85,18 +81,15 @@
   .blue-text {
     color: var(--primary-blue);
   }
-  
   .divider {
     width: 100%;
     height: 16px; 
     background-color: #ddd;
   }
-  
   main {
     margin: 0;
     padding: 0;
   }
-  
   .airports {
     width: 100%;
   }
@@ -131,7 +124,6 @@
     font-size: 1rem;
     margin-bottom: 1rem;
   }
-
   .airport-links {
     list-style: none;
     padding: 0;
@@ -148,21 +140,17 @@
   .airport-links li a:hover {
     text-decoration: underline;
   }
-  
-
   .airport-image img {
     width: 100%;
     height: auto;
     border-radius: 24px;
   }
-  
   footer {
     background-color: #ddd;
     text-align: left;
     padding: 1rem 2rem; 
     font-family: 'Inria Serif', serif;
   }
-  
   .footer-info {
     list-style: none;
     display: flex;
@@ -170,7 +158,6 @@
     margin: 0;
     padding: 0;
   }
-  
   .footer-info li {
     font-size: 0.9rem;
     color: #666;
@@ -179,7 +166,3 @@
   .footer-info li + li {
     margin-left: 2rem;
   }
-  
-  
-  
-  
